@@ -2,4 +2,4 @@
 
 It's more fun to catch'em all with a friend!
 
-["Click here to weblink for Heroku!"](https://powerful-mountain-82732.herokuapp.com/)
+[Click here](https://powerful-mountain-82732.herokuapp.com/) to check out the deployed site on Heroku!
