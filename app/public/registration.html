@@ -64,14 +64,15 @@
                             <input type="radio" name="optradio">Option 3</label>
                     </div>
                 </div> -->
+                <div id="questionsList"></div>
                 <div class="form-group">
                     <p class="my-0">You are aiming to be the pokemon master?</p>
                     <select id="question-1" class="custom-select questions">
-                        <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -194,6 +195,9 @@
 
     <script type="text/JavaScript">
 
+
+
+
         $("#submitInfo").on("click", (event) => {
             event.preventDefault();
 
@@ -203,7 +207,7 @@
 
             let allQuestions = $(".questions");
             for(let i = 0; i < allQuestions.length; i++){
-                trainerPref.push(allQuestions[0].value);
+                trainerPref.push(parseInt(allQuestions[i].value.substring(0,1)));
             }
 
             let trainerInfo = {
@@ -216,6 +220,9 @@
 
             console.log(trainerInfo)
 
+            $.post("/api/trainers", trainerInfo, function(data) {
+                console.log(data);
+            })
         })
 
 
