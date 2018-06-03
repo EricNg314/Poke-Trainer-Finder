@@ -1,19 +1,19 @@
 //initializing npm packages as variables.
-var express = require("express");
-var bodyParser = require("body-parser");
+let express = require("express");
+let bodyParser = require("body-parser");
 
 //node to create an express server
-var app = express();
+let app = express();
 
-var PORT = 8080;
+const PORT = 8080;
 
 //Express to handle data parsing.
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-//TODO: To be applied when apiRoutes.js and htmlRoutes.js are written.
-// require("./app/routing/apiRoutes")(app);
-// require("./app/routing/htmlRoutes")(app);
+//JS files listening for requests in apiRoutes.js and htmlRoutes.js
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 app.listen(PORT, () => {
     console.log("App listening on PORT: " + PORT)
