@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Hello, world!</title>
+    <title>Poke Trainers Unite!</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
         <div class="jumbotron">
             <h1 class="text-center">
-                <span class="fa fa-registered"></span> Pokemon Trainer Finder</h1>
+                <span class="fa fa-registered"></span> Pokemon Trainer United</h1>
             <hr>
             <h2 class="text-center">Hurry and join the craze as we find you a trainer to battle and hang with!</h2>
             <br>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="card card-body">
-            <form>
+            <form role="form">
                 <div class="form-group">
                     <label for="inputName">Name (Required)</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Nurse Joy">
@@ -181,6 +181,26 @@
 
     </div>
 
+    <div id="modalFriend" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -196,8 +216,6 @@
     <script type="text/JavaScript">
 
 
-
-
         $("#submitInfo").on("click", (event) => {
             event.preventDefault();
 
@@ -210,11 +228,12 @@
                 trainerPref.push(parseInt(allQuestions[i].value.substring(0,1)));
             }
 
+            console.log(allQuestions);
             let trainerInfo = {
-                trainerName: $("#inputName"),
-                trainerEmail: $("#inputEmail"),
-                trainerPhone: $("#inputPhone"),
-                trainerImage: $("#inputImage"),
+                trainerName: $("#inputName").val(),
+                trainerEmail: $("#inputEmail").val(),
+                trainerPhone: $("#inputPhone").val(),
+                trainerImage: $("#inputImage").val(),
                 trainerPref: trainerPref
             };
 
@@ -222,14 +241,10 @@
 
             $.post("/api/trainers", trainerInfo, function(data) {
                 console.log(data);
-            })
+                $("#modalFriend").modal("show");
+                // $("#modalFriend").attr("tabindex","0");
+            });
         })
-
-
-
-
-
-
 
 
     </script>

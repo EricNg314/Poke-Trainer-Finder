@@ -8,10 +8,12 @@ let app = express();
 let PORT = process.env.PORT || 8080;
 
 //Express to handle data parsing.
+// app.use('/js', express.static(__dirname + '/js'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 //JS files listening for requests in apiRoutes.js and htmlRoutes.js
+// require("./app/data/questions")(app);
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 

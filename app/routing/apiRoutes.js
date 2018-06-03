@@ -8,6 +8,8 @@ module.exports = (app) => {
     app.post("/api/trainers", function(req, res) {
         console.log("yay?");
         trainersData.push(req.body);
-        res.json(true);
+
+        //TODO: Get corresponding person's objectData        
+        res.json(req.body);
     })
 };
