@@ -147,7 +147,6 @@
     <script type="text/JavaScript">
 
         $("#submitInfo").on("click", (event) => {
-            console.log("in FN");
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             // var forms = document.getElementsByClassName('needs-validation');
             var forms = $(".needs-validation");
@@ -184,10 +183,8 @@
                     trainerPref: trainerPref
                 };
 
-                console.log(trainerInfo)
 
                 $.post("/api/trainers", trainerInfo, (data) => {
-                    console.log(data);
                     
                     $("#modalName").text(data.trainerName);
                     $("#modalImg").attr("src", data.trainerImage);

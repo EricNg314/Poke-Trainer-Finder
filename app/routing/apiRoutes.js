@@ -9,7 +9,7 @@ module.exports = (app) => {
 
         let pairedWithObj = {};
         let compatibility = 99999; //0 is in reference to perfect compatibility
-        //TODO: Get corresponding person's objectData        
+        // Get corresponding person's objectData        
         for (let i = 0; i < trainersData.length; i++) {
             let checkCompat = 0;
             for(let j = 0; j < trainersData[i]["trainerPref"].length; j++){
