@@ -37,22 +37,36 @@
         </div>
 
         <div class="card card-body">
-            <form role="form">
+            <form role="form" class="needs-validation" novalidate>
+
                 <div class="form-group">
                     <label for="inputName">Name (Required)</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nurse Joy">
+                    <input type="text" class="form-control" id="inputName" placeholder="Nurse Joy" required>
+                    <div class="invalid-feedback">
+                        Please choose a name.
+                    </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputEmail">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="NurseJoy@PokeCenter.com">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="NurseJoy@PokeCenter.com" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPhone">Phone Number</label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="415-555-7777">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="415-555-7777" required>
+                    <div class="invalid-feedback">
+                        Please provide a phone number.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="inputImage">Image Url:</label>
-                    <input type="text" class="form-control" id="inputImage">
+                    <input type="text" class="form-control" id="inputImage" required>
+                    <div class="invalid-feedback">
+                        Please provide an image.
+                    </div>
                 </div>
                 <!-- <div class="form-group">
                     <div class="row">
@@ -68,7 +82,7 @@
                 <div class="form-group">
                     <p class="my-0">You are aiming to be the pokemon master?</p>
                     <select id="question-1" class="custom-select questions">
-                        <option>1 (Strongly Disagree)</option>
+                        <option selected>1 (Strongly Disagree)</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
@@ -79,90 +93,90 @@
                     <p class="my-0">Do you believe SLOWPOKEs are intelligent?</p>
                     <select id="question-2" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Do you often feel like a DITTO?</p>
                     <select id="question-3" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Are you scared of a CHARIZARD?</p>
                     <select id="question-4" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Would you buy MAGIKARP for $500?</p>
                     <select id="question-5" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Have you ever checked the inside of a VICTREEBEL?</p>
                     <select id="question-6" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Do you feel an ELECTRODE would make a good house pokemon?</p>
                     <select id="question-7" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Do you prefer a TOGEPI more than ENTEI?</p>
                     <select id="question-8" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Will you learn to read all 28 UNOWN shapes?</p>
                     <select id="question-9" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <p class="my-0">Would you enter MEW in a pokemon contest?</p>
                     <select id="question-10" class="custom-select questions">
                         <option selected>1 (Strongly Disagree)</option>
-                        <option selected>2</option>
-                        <option selected>3</option>
-                        <option selected>4</option>
-                        <option selected>5 (Strongly Agree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
                     </select>
                 </div>
                 <button id="submitInfo" type="submit" class="btn btn-primary my-1">Submit</button>
@@ -181,20 +195,22 @@
 
     </div>
 
-    <div id="modalFriend" class="modal" tabindex="-1" role="dialog">
+    <div id="modalPal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Your selected PokePal is...!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <h5 id="modalName"></h5>
+                    <img id="modalImg" src="..." class="img-fluid" alt="Selected pal's image">
+                    <p id="modalEmail"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -213,41 +229,112 @@
     <!-- TODO: Generate questions and selection in questions.js instead of inside html. -->
     <!-- <script src="../data/questions.js"></script> -->
 
+
+
+
+
     <script type="text/JavaScript">
 
+        // $("#submitInfo").on("click", (event) => {
+        //     event.preventDefault();
 
-        $("#submitInfo").on("click", (event) => {
-            event.preventDefault();
+        //     let trainerPref = [];
 
-            // console.log($("#question1").val().substring(0,1));
+        //     let allQuestions = $(".questions");
+        //     for(let i = 0; i < allQuestions.length; i++){
+        //         trainerPref.push(parseInt(allQuestions[i].value.substring(0,1)));
+        //     }
 
-            let trainerPref = [];
+        //     let trainerInfo = {
+        //         trainerName: $("#inputName").val(),
+        //         trainerEmail: $("#inputEmail").val(),
+        //         trainerPhone: $("#inputPhone").val(),
+        //         trainerImage: $("#inputImage").val(),
+        //         trainerPref: trainerPref
+        //     };
 
-            let allQuestions = $(".questions");
-            for(let i = 0; i < allQuestions.length; i++){
-                trainerPref.push(parseInt(allQuestions[i].value.substring(0,1)));
-            }
+        //     console.log(trainerInfo)
 
-            console.log(allQuestions);
-            let trainerInfo = {
-                trainerName: $("#inputName").val(),
-                trainerEmail: $("#inputEmail").val(),
-                trainerPhone: $("#inputPhone").val(),
-                trainerImage: $("#inputImage").val(),
-                trainerPref: trainerPref
-            };
+        //     $.post("/api/trainers", trainerInfo, (data) => {
+        //         console.log(data);
+                
+        //         $("#modalName").text(data.trainerName);
+        //         $("#modalImg").attr("src", data.trainerImage);
+        //         $("#modalEmail").text("Contact them through email at: " + data.trainerEmail);
 
-            console.log(trainerInfo)
+        //         $("#modalPal").modal("show");
+        //         // $("#modalPal").attr("tabindex","0");
+        //     });
+        // })
 
-            $.post("/api/trainers", trainerInfo, function(data) {
-                console.log(data);
-                $("#modalFriend").modal("show");
-                // $("#modalFriend").attr("tabindex","0");
+            $("#submitInfo").on("click", (event) => {
+                console.log("in FN");
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                // var forms = document.getElementsByClassName('needs-validation');
+                var forms = $(".needs-validation");
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            //If checkValidity = true
+                            event.preventDefault();
+                            getInfo();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+
+
+                function getInfo(){
+                    let trainerPref = [];
+
+                    let allQuestions = $(".questions");
+                    for(let i = 0; i < allQuestions.length; i++){
+                        trainerPref.push(parseInt(allQuestions[i].value.substring(0,1)));
+                    }
+
+                    let trainerInfo = {
+                        trainerName: $("#inputName").val(),
+                        trainerEmail: $("#inputEmail").val(),
+                        trainerPhone: $("#inputPhone").val(),
+                        trainerImage: $("#inputImage").val(),
+                        trainerPref: trainerPref
+                    };
+
+                    console.log(trainerInfo)
+
+                    $.post("/api/trainers", trainerInfo, (data) => {
+                        console.log(data);
+                        
+                        $("#modalName").text(data.trainerName);
+                        $("#modalImg").attr("src", data.trainerImage);
+                        $("#modalEmail").text("Contact them through email at: " + data.trainerEmail);
+
+                        $("#modalPal").modal("show");
+                        // $("#modalPal").attr("tabindex","0");
+                    });
+                }
             });
-        })
+
+
+
+
+
+
+
+
+
+
+
 
 
     </script>
+
+
+
 </body>
 
 </html>
