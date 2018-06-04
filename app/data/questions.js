@@ -30,7 +30,7 @@ $(document).ready(function () {
         label.addClass("my-0");
         label.text(questions[i]);
         select.attr("id", "question-" + i);
-        select.addClass("custom-select questions")
+        select.addClass("custom-select form-control-sm questions col-md-3")
 
         for (let j = 0; j < answers.length; j++) {
             let option = $("<option>");
