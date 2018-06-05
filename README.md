@@ -2,11 +2,13 @@
 
 It's more fun to catch'em all with a friend!
 
+This application was built as an example of a full stack webpage with front and backend. The example takes in input based on predefined routes, receive information from forms, and can output the backend data as an api (link located on the bottom of webpage).
+
 [Click here](https://powerful-mountain-82732.herokuapp.com/) to check out the deployed site on Heroku!
 
 ## Examples of App :tv:
 
-
+![demo](/assets/Poke-Trainer-Finder.gif)
 
 ## Getting Started :loudspeaker:
 This repo utilizes various packages from Node Package Manager(NPM).
@@ -29,7 +31,7 @@ This repo utilizes various packages from Node Package Manager(NPM).
     node server.js
     ```
 
-3. Go to your browser and type enter http://localhost:8080/ into your address bar.
+3. Go to your browser and type enter http://localhost:8080/ into your address bar. (Or visit the live demo [here](https://powerful-mountain-82732.herokuapp.com/).)
 
     
 ## Built With :hammer:
