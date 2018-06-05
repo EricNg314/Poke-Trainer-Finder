@@ -12,13 +12,6 @@ let trainerArray = [
         trainerPhone:"415-555-8888",
         trainerImage: "https://i.ytimg.com/vi/oKBXSKMXUCY/maxresdefault.jpg",
         trainerPref: [1,1,1,1,1,1,1,1,1,1]
-    },
-    {
-        trainerName: "Tom Ato",
-        trainerEmail:"TomAto@PalletTown.com",
-        trainerPhone:"415-555-8888",
-        trainerImage: "https://i.ytimg.com/vi/oKBXSKMXUCY/maxresdefault.jpg",
-        trainerPref: [1,1,1,1,1,1,1,1,1,1]
     }
 ];
 
