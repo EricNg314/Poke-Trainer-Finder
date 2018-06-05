@@ -14,10 +14,9 @@ app.use("/app/css", express.static(__dirname + "/app/css"));
 app.use("/app/data", express.static(__dirname + "/app/data"));
 
 //JS files listening for requests in apiRoutes.js and htmlRoutes.js
-// require("./app/data/questions")(app);
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 app.listen(PORT, () => {
-    console.log("App listening on PORT: " + PORT)
+    console.log("App listening on http://localhost:" + PORT)
 });
